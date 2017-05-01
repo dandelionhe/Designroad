@@ -1,0 +1,14 @@
+@import '_variables';
+
+.btn{
+  text-transform: uppercase;
+}
+.btn-primary{
+  background: $inverse-background!important;
+  border-color: $bw-primary;
+  color: $white;
+  &:hover{
+    background: red;
+    border-color: $bw-dark-primary;
+  }
+}

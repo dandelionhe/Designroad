@@ -1,0 +1,129 @@
+// Place all the styles related to the Homepages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+@import 'components/_variables';
+
+
+.container{
+  padding:0 100px;
+}
+
+.btn-primary{
+  background: $md-pink;
+  border-color: $md-pink;
+  text-transform: uppercase;
+  &:hover{
+    background: ($md-pink - #211);
+    border-color: ($md-pink - #211);
+  }
+}
+// Header and Footers
+.header{
+  margin-bottom: ($margin * 2);
+}
+.header-nav{
+  background:$md-blue;
+}
+.navbar{
+  margin-bottom: 0;
+}
+.navbar-default{
+  background:$md-blue;
+  text-transform: uppercase;
+  border-color: $md-blue;
+
+  .navbar-toggle,.icon-bar{
+    border-color: $md-blue;
+  }
+
+  .navbar-brand{
+    color:$inverse-text;
+    font-weight: 700;
+    &:hover{
+      color:$md-light-blue;
+    }
+  }
+
+  .navbar-nav{
+    li{
+      a{
+        color:$md-light-blue;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+}//end of navbar-default
+
+#header-search{
+  height: 60px;
+  background: $secondary-background;
+  padding:0 ($padding * 1.5);
+  .input-group{
+    margin-top: 13px;
+  }
+}
+
+.header-filters{
+  background: $primary-background;
+  height: 60px;
+  line-height: 60px;
+}
+
+//footer
+footer{
+  margin-top: ($margin * 6);
+  padding-bottom: ($padding * 6);
+  padding-top: ($padding * 2);
+  background: $md-grey;
+  color:$md-light-grey;
+  text-align: center;
+  a{
+    font-size: ($font-size * 2);
+    color:$md-light-grey;
+    &:hover{
+      color:$inverse-text;
+      transform: scale(1.5);
+    }
+  }
+}
+
+// feed
+.feed{
+
+  background: $primary-background;
+  padding: ($padding * 2);
+  margin-bottom: ($margin * 2);
+  @include round-corners;
+}
+
+.well{
+  border: 0;
+  box-shadow: none;
+  @include round-corners;
+  background-color: $md-grey;
+  color:$white;
+}
+
+.post{
+  padding-bottom: $padding;
+  border-bottom: $border-size $light-grey $border-type;
+  margin-top: ($margin*2);
+  &:first-child{
+    margin-top: 0;
+  }
+  small{
+    color: $md-light-grey;
+    a{
+      color:$md-light-grey;
+      text-decoration: underline;
+      &:hover{
+        color: $md-grey;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import "variables";
+
+.modal-dialog{
+
+  margin:0;
+  width:auto;
+}
+.modal-backdrop{
+  background: $md-pink!important;
+  opacity: .9!important;
+}
+.modal-content{
+  background: none!important;
+  color:$inverse-text;
+  box-shadow: none;
+  border:0;
+  border-radius: 0px;
+  p{
+    margin-bottom: ($margin*1.5);
+  }
+}
+.modal-header{
+  border-bottom: 0;
+}
+
+.close{
+
+  text-shadow: none;
+  opacity: 1;
+  a{
+
+    text-decoration: underline;
+    &:hover{
+      color: $md-black;
+    }
+  }
+}
+
+
+.modal form{
+  margin-bottom: ($margin*2);
+
+  .form-control{
+    border: 0;
+    box-shadow: none;
+    @include round-corners;
+  }
+  .btn-default{
+    border:0;
+  }
+}

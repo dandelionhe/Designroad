@@ -1,0 +1,103 @@
+// Place all the styles related to the HomePages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+@import '_variables';
+
+.container{
+  padding: 0 100px;
+}
+.header{
+  margin-top: ($margin * 2);
+  a{
+    color:$bw-black;
+    font-weight: bold;
+    &:hover{
+      color: $bw-grey;
+    }
+  }
+
+  ul{
+    margin-bottom: 0;
+    li{
+      margin-right: ($margin*1.25);
+    }
+  }
+}
+
+.header-nav{
+  margin-bottom: ($margin*2);
+}
+
+
+.footer-languages{
+  background: $inverse-background;
+  color: $bw-black;
+  padding: ($padding * 2) 0;
+  ul{
+    margin-bottom: 0;
+  }
+  a{
+    color: $white;
+    &:hover{
+      color: $bw-black;
+    }
+  }
+
+}
+
+.footer{
+  color: $bw-light-grey;
+  margin: ($margin*2) 0;
+  a{
+    color: $bw-light-grey;
+    &:hover{
+      color: $bw-grey;
+    }
+  }
+}
+
+.page-title{
+  border-bottom: ($border-size*5) $border-type $border-color;
+  padding-bottom: $padding;
+}
+
+.sidebar{
+  background: $inverse-background;
+  padding: $padding;
+  margin-bottom: ($margin*2);
+  color: $inverse-text;
+  ul{
+    li{
+      a{
+        color: $inverse-text;
+      }
+    }
+  }
+
+}
+.feed{
+  padding: $padding;
+}
+
+.post{
+
+  margin-top: ($margin*2);
+
+  border-bottom: $border-size $border-type $border-color;
+  padding:($padding*1.5) $padding;
+  i{
+    color: $light-grey;
+    &:hover{
+      color: $red1;
+    }
+  }
+}
+
+.feed-pagination{
+  margin: ($margin* 1.5) 0;
+}

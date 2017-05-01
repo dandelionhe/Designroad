@@ -1,0 +1,14 @@
+@import "_variables";
+
+.modal-dialog{
+  margin: 0;
+  width: auto;
+}
+
+.modal-backdrop{
+  background: $white;
+  opacity: .9!important;
+}
+.modal-content{
+  text-align: center;
+}
